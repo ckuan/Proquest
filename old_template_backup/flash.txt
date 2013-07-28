@@ -1,0 +1,4 @@
+logo=Proquest, Ltd. 
+
+&slogan=Display Fixtures
+

@@ -1,0 +1,281 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+
+<html><head>
+
+
+
+<title>Image Slideshow</title>
+
+
+
+<link rel=StyleSheet href="corporatestyle.css" type="text/css" media="screen">
+
+
+
+<script language="JavaScript" src="javascripts.js"></script>
+
+
+
+
+
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+
+<script language="JavaScript" src="no-right-click.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+<!-- Begin
+
+var rotate_delay = 3000; // delay in milliseconds (5000 = 5 secs)
+
+current = 0;
+
+function next() {
+
+if (document.slideform.slide[current+1]) {
+
+document.images.show.src = document.slideform.slide[current+1].value;
+
+document.slideform.slide.selectedIndex = ++current;
+
+   }
+
+else first();
+
+}
+
+function previous() {
+
+if (current-1 >= 0) {
+
+document.images.show.src = document.slideform.slide[current-1].value;
+
+document.slideform.slide.selectedIndex = --current;
+
+   }
+
+else last();
+
+}
+
+function first() {
+
+current = 0;
+
+document.images.show.src = document.slideform.slide[0].value;
+
+document.slideform.slide.selectedIndex = 0;
+
+}
+
+function last() {
+
+current = document.slideform.slide.length-1;
+
+document.images.show.src = document.slideform.slide[current].value;
+
+document.slideform.slide.selectedIndex = current;
+
+}
+
+function ap(text) {
+
+document.slideform.slidebutton.value = (text == "Stop") ? "AutoPlay" : "Stop";
+
+rotate();
+
+}
+
+function change() {
+
+current = document.slideform.slide.selectedIndex;
+
+document.images.show.src = document.slideform.slide[current].value;
+
+}
+
+function rotate() {
+
+if (document.slideform.slidebutton.value == "Stop") {
+
+current = (current == document.slideform.slide.length-1) ? 0 : current+1;
+
+document.images.show.src = document.slideform.slide[current].value;
+
+document.slideform.slide.selectedIndex = current;
+
+window.setTimeout("rotate()", rotate_delay);
+
+   }
+
+}
+
+//  End -->
+
+</script>
+
+
+
+
+
+</head>
+
+
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0066FF" VLINK="#0066FF" ALINK="#99CCFF" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" marginheight="0" marginwidth="0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTENT TABLE -->
+
+<TABLE cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><tr><td ALIGN="center" VALIGN="middle">
+
+
+
+
+
+
+
+
+
+<form name="slideform" style="margin: 0px">
+
+
+
+
+
+<br>
+
+
+
+
+
+<!-- EDIT THIS AREA TO ADD AND REMOVE PICTURES FROM THE SLIDESHOW -->
+
+
+
+
+
+<input type=hidden value="gallery/Scan1.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/Scan2.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/Scan3.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/Scan4.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan5.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan6.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan7.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/Scan8.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan9.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan10.jpg" name="slide" onChange="change();">
+
+<input type=hidden value="gallery/scan11.jpg" name="slide" onChange="change();">
+
+
+
+
+
+
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0"><tr><td align="center">
+
+
+
+
+
+
+
+<!-- THIS LINE CALLS THE FIRST SLIDE -->
+
+
+
+<TABLE cellpadding="0" cellspacing="0" border="1" bordercolor="#000000" style="border-collapse: collapse"><tr><td>
+
+<img src="gallery/Scan1.jpg" name="show"><br>
+
+</td></tr></table>
+
+
+
+
+
+<br>
+
+
+
+<input type=button onClick="first();" value="|<<" title="Beginning" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+<input type=button onClick="previous();" value="<<" title="Previous" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+<input type=button value="Close" onClick='self.close()' class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+<input type=button name="slidebutton" onClick="ap(this.value);" value="AutoPlay" title="AutoPlay" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+<input type=button onClick="next();" value=">>" title="Next" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+<input type=button onClick="last();" value=">>|" title="End" class="button-popups" onmouseover="this.className='buttonon-popups'" onmouseout="this.className='button-popups'">
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</td></tr></table>
+
+<!-- CONTENT TABLE -->
+
+
+
+
+
+</BODY></HTML>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<simpleviewerGallery maxImageWidth = "640" maxImageHeight = "640" textColor = "0xffffff" frameColor = "0xffffff" frameWidth = "20" stagePadding = "40" thumbnailColumns = "3" thumbnailRows = "4" navPosition = "left" title = "SimpleViewer Title" enableRightClickOpen = "true" backgroundImagePath = "" imagePath = "" thumbPath = "">
+<image>
+	<filename>Scan9.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan9.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan7.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan7.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan8.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan8.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan6.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan6.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan5.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan5.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan4.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan4.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan3.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan3.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan11.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan11.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan2.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan2.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan10.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan10.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+<image>
+	<filename>Scan1.jpg</filename>
+	<caption><![CDATA[<a href="images/Scan1.jpg" target="_blank"><u>Open image in new window</u></a>]]></caption>
+</image>
+</simpleviewerGallery>
